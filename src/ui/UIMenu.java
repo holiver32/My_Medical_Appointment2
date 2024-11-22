@@ -2,6 +2,8 @@ package ui;
 import java.util.Scanner;
 
 public class UIMenu {
+    public static String[] MONTHS = {"January", "February","March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+
     public static void showMenu(){
         System.out.println("Welcome to my Appointments");
         System.out.println("Please type the number according to your user category");
@@ -71,6 +73,9 @@ public class UIMenu {
             switch (response){
                 case 1:
                     System.out.println(":: Welcome to the booking appointment screen");
+                    for (int i=1; i < 4; i++) {
+                        System.out.println(i +". " + MONTHS[i]);
+                    }
                     break;
 
                 case 2:
