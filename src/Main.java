@@ -22,10 +22,20 @@ public class Main {
         //System.out.println(myDoctor.speciality);
 
         Patient patient =  new Patient("Alejandra", "alejandra@gmail.com2");
-        patient.setWeight(54.6);
-        System.out.println(patient.getweight());
+        Patient patient2 = new Patient("Anahi", "anahi@mail.com");
 
-        patient.setPhoneNumber("123456789");
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+        patient2 = patient;
+
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+
+        patient2.setName("Manuel");
+        System.out.println(patient.getName());
+        System.out.println(patient2.getName());
+
+        // patient.setPhoneNumber("123456789");
         
     //    Doctor myDoctor = new Doctor();
     //    myDoctor.name= "Alejandro Rodriguez";
@@ -37,5 +47,4 @@ public class Main {
 
     //    showMenu();
     }
-
 }
