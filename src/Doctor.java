@@ -1,3 +1,4 @@
+import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -12,6 +13,11 @@ public void addAvailableAppointment(Date date, String time){
  public ArrayList<AvailableAppointment> getAvailableAppointments(){
     return availableAppointments;
  }
+
+ @Override
+    public String toString() {
+        return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
+    }
 
 public static class AvailableAppointment{
     private int id;
@@ -47,9 +53,9 @@ public static class AvailableAppointment{
     }
  }
 
-    Doctor(String name, String speciality) {
-        super(name, speciality);
-        System.out.println("El nombre del Doctor asignado es: " + name); 
+    Doctor(String name, String email, String speciality) {
+        super(name, email, speciality);
+        System.out.println("The assigned doctor is:  " + name + "  Speciality: " +speciality); 
         this.speciality = speciality;
     }
     

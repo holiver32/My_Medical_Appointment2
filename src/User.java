@@ -5,9 +5,12 @@ public class User {
     private String address;
     private String phoneNumber;
 
-    public User(String name, String email) {
+
+    public User(String name, String email, String address) {
         this.name = name;
         this.email = email;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
     }
 
 
@@ -47,11 +50,17 @@ public class User {
         return phoneNumber;
     }
 
-    public void setPhoneNumber(String phoneNumber) {
-        if (phoneNumber.length() > 8){
-            System.out.println("El número telefónico debe ser de 8 dígitos máximo");
-        }else if(phoneNumber.length() == 8){
+     public void setPhoneNumber(String phoneNumber) {
+        if (phoneNumber.length() > 10){
+            System.out.println("The telephon number must be 10 digits");
+        }else if(phoneNumber.length() == 10){
             this.phoneNumber = phoneNumber;
         }
+    } 
+
+     @Override
+    public String toString() {
+        return "User: " + name + " Email: "+email+
+                "\nAddreess: "+address+". Phone: "+phoneNumber;
     }
  }
