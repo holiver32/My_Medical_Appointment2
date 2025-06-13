@@ -1,3 +1,4 @@
+package model;
 import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Date;
@@ -53,7 +54,7 @@ public static class AvailableAppointment{
     }
  }
 
-    Doctor(String name, String email, String speciality) {
+   public Doctor(String name, String email, String speciality) {
         super(name, email, speciality);
         System.out.println("The assigned doctor is:  " + name + "  Speciality: " +speciality); 
         this.speciality = speciality;

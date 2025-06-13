@@ -1,6 +1,9 @@
 import java.util.Date;
 import java.util.Scanner;
 
+import model.Doctor;
+import model.Patient;
+
 import static ui.UIMenu.*;
 
 public class Main {
