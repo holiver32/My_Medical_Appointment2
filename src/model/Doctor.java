@@ -20,6 +20,8 @@ public void addAvailableAppointment(Date date, String time){
         return super.toString() + "\nSpeciality: " + speciality + "\nAvailable: " + availableAppointments.toString();
     }
 
+
+
 public static class AvailableAppointment{
     private int id;
     private Date date; 
@@ -66,6 +68,12 @@ public static class AvailableAppointment{
 
     public void setSpeciality(String speciality) {
         this.speciality = speciality;
+    }
+
+     @Override 
+    public void showDataUser() { 
+        System.out.println("Hospital Employee: Red Cross");
+        System.out.println("Deparment: Oncologia.");
     }
 
 }
