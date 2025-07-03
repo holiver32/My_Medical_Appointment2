@@ -38,7 +38,6 @@ public class Main {
         user2.showDataUser();
 
         //Patient patient2 = new Patient("Anahi", "anahi@mail.com");
-
         //System.out.println(patient.getName());
         /*System.out.println(patient2.getName());
         patient2 = patient;

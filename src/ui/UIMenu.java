@@ -28,11 +28,13 @@ public class UIMenu {
                 case 1:
                     System.out.println("Welcome Doctor!!");
                     response = 0;
+                    authUser(1);
                     break;
 
                 case 2:
+                    response = 0;
+                    authUser(2);
                     System.out.println("Welcome Patient!!");
-                    showPatientMenu();
                     break;
 
                 case 9:
